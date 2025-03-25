@@ -27,12 +27,12 @@ const Hero = () => {
         <div className="border-b border-neutral-800 pb-20 lg:mb-35 sm:mt-20">
             <div className="flex flex-wrap justify-center items-center sm:mx-20" >
                 <div className="w-full sm:w-[48%]">
-                    <div className="flex flex-col sm:items-start items-center ">
+                    <div className="flex flex-col sm:items-start items-center justify-center ">
                         <motion.h1  
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-12 text-6xl font-thin tracking-tight lg:text-7xl">
+                            className="pb-12 sm:text-6xl text-5xl font-thin tracking-tight lg:text-7xl">
                             Suvesh Pandey
                         </motion.h1>
                         <motion.span 
