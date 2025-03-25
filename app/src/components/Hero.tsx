@@ -24,7 +24,7 @@ const Hero = () => {
     }
 
     return (
-        <div className="border-b border-neutral-800 pb-20 lg:mb-35 sm:mt-20">
+        <div className="border-b border-neutral-800 pb-20 lg:mb-35 sm:mt-20 mt-10">
             <div className="flex flex-wrap justify-center items-center sm:mx-20" >
                 <div className="w-full sm:w-[48%]">
                     <div className="flex flex-col sm:items-start items-center justify-center ">
@@ -43,10 +43,21 @@ const Hero = () => {
                             variants={container(0.7)}
                             initial="hidden"
                             animate="visible"
-                            className="my-2 max-w-xl sm:text-left text-center py-6 font-light tracking-tight">
-                            I am a second-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, I am currently expanding my expertise by exploring advanced concepts like TypeScript. Alongside web development, I actively practice DSA in C++, having solved over 600 problems. I am highly motivated, consistently striving for self-improvement and growth.
-                            <br />
-                            <br />
+                            className="my-2 max-w-xl sm:text-left text-neutral-400 text-center pt-6 pb-2 font-light tracking-tight">
+                            I am a second-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, I am currently expanding my expertise by exploring advanced concepts like TypeScript. 
+                        </motion.p>
+                        <motion.p
+                            variants={container(0.7)}
+                            initial="hidden"
+                            animate="visible"
+                            className="max-w-xl sm:text-left text-neutral-400 text-center py-2 font-light tracking-tight">
+                            Alongside web development, I actively practice DSA in C++, having solved over 600 problems. I am highly motivated, consistently striving for self-improvement and growth.
+                        </motion.p>
+                        <motion.p
+                            variants={container(0.7)}
+                            initial="hidden"
+                            animate="visible"
+                            className="max-w-xl text- sm:text-left text-neutral-400 text-center pt-2 pb-10 font-light tracking-tight">
                             I am seeking internship opportunities in web development, particularly in the MERN stack, to gain hands-on experience and contribute to real-world projects.
                         </motion.p>
                     </div>
