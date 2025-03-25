@@ -80,7 +80,7 @@ const Hero = () => {
                             transition={{duration: 1, delay: 1}}
                             src={profilePic} 
                             alt="Suvesh Pandey" 
-                            className="rounded-lg lg:size-[400px] size-[300px] opacity-60 " 
+                            className="rounded-lg lg:size-[400px] size-[300px] " 
                         />
                     </div>
                 </div>

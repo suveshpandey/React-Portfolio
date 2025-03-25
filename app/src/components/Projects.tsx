@@ -36,7 +36,7 @@ const Projects = () => {
                             whileInView={{opacity: 1, x: 0}}
                             initial={{opacity: 0, x: 100}}
                             transition={{duration: 1.5}}
-                            className="w-full max-w-xl lg:w-[50%] h-full flex flex-col justify-center sm:mt-0 mt-7">
+                            className="w-full max-w-xl lg:w-[50%] h-full flex flex-col justify-center sm:mt-7 lg:mt-0 mt-7">
                             <h6 className="mb-2 font-semibold">{project.title}</h6>
                             <p className="mb-4 text-neutral-400">{project.description}</p>
                             <div className="flex flex-wrap">

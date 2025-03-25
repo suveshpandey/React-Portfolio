@@ -27,7 +27,7 @@ const CodingProfiles = () => {
                 <button
                     type="button"
                     onClick={() => handleBtnClick("https://leetcode.com/u/Suvesh_Pandey/") }
-                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[170px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
+                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
                 >
                     <img src={leetcode} alt="leetcode" className="size-10" />
                     <span className="text-neutral-300">Leetcode</span>
@@ -35,7 +35,7 @@ const CodingProfiles = () => {
                 <button
                     type="button"
                     onClick={() => handleBtnClick("https://codeforces.com/profile/suvesh_pandey") }
-                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[170px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
+                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
                 >
                     <img src={codeforces} alt="leetcode" className="size-10" />
                     <span className="text-neutral-300">Codeforces</span>
@@ -43,7 +43,7 @@ const CodingProfiles = () => {
                 <button
                     type="button"
                     onClick={() => handleBtnClick("https://www.codechef.com/users/suvesh_pandey") }
-                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[170px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
+                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
                 >
                     <img src={codechef} alt="leetcode" className="size-10" />
                     <span className="text-neutral-300">Codechef</span>
@@ -51,7 +51,7 @@ const CodingProfiles = () => {
                 <button
                     type="button"
                     onClick={() => handleBtnClick("https://www.geeksforgeeks.org/user/suveshpandey/") }
-                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[170px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
+                    className="text-white bg-[#24292F] hover:bg-neutral-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3"
                 >
                     <img src={gfg} alt="leetcode" className="size-10" />
                     <span className="text-neutral-300">GeeksForGeeks</span>
