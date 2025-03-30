@@ -40,17 +40,17 @@ const Technologies = () => {
                 whileInView={{opacity: 1, x: 0}}
                 initial={{opacity: 0, x: -100}}
                 transition={{duration: 1.5}}
-                className="flex flex-wrap items-center justify-center gap-4 lg:px-30">
-                
+                className="flex flex-wrap items-center justify-center gap-5 lg:px-30">
+                {/* icons start */}
                 <motion.div 
-                    variants={iconVariants(2.5)}
+                    variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <SiMongodb className="text-7xl text-green-400" />
                 </motion.div>
                 <motion.div 
-                    variants={iconVariants(3.5)}
+                    variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
@@ -64,14 +64,14 @@ const Technologies = () => {
                     <RiReactjsLine className="text-7xl text-cyan-400" />
                 </motion.div>
                 <motion.div
-                    variants={iconVariants(2.5)}
+                    variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <FaNodeJs className="text-7xl text-green-500" />
                 </motion.div>
                 <motion.div 
-                    variants={iconVariants(3.5)}
+                    variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
@@ -85,14 +85,14 @@ const Technologies = () => {
                     <BiLogoTypescript className="text-7xl text-blue-400" />
                 </motion.div>
                 <motion.div
-                    variants={iconVariants(2.5)}
+                    variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <RiJavascriptFill className="text-7xl text-yellow-400" />
                 </motion.div>
                 <motion.div
-                    variants={iconVariants(3.5)}
+                    variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
@@ -106,14 +106,14 @@ const Technologies = () => {
                     <FaCss3Alt className="text-7xl text-blue-400" />
                 </motion.div>
                 <motion.div
-                variants={iconVariants(2.5)}
+                variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <FaC className="text-7xl text-blue-600" />
                 </motion.div>
                 <motion.div
-                variants={iconVariants(3.5)}
+                variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
