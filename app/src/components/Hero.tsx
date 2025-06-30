@@ -1,5 +1,5 @@
 import profilePic from "../assets/profilePic.jpg"
-import resumeUrl from "../assets/SuveshPandeyResume.pdf"
+import resumeUrl from "../assets/suvesh_pandey_resume.pdf"
 import { motion } from "motion/react"
 
 const container = (delay: number) => ({
@@ -44,7 +44,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="my-2 max-w-xl sm:text-left text-neutral-400 text-center pt-6 pb-2 font-light tracking-tight">
-                            I am a second-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, I am currently expanding my expertise by exploring advanced concepts like TypeScript. 
+                            I am a third-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, I am currently expanding my expertise by exploring advanced concepts like TypeScript and Nextjs. 
                         </motion.p>
                         <motion.p
                             variants={container(0.7)}
