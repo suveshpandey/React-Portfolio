@@ -8,7 +8,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className=" flex items-center justify-between sm:py-8 py-4">
+        <nav className="flex items-center justify-between sm:py-8 py-4 sm:mx-26">
             <div className="flex flex-shrink-0 items-center">
                 <h1 className="text-3xl cursor-pointer">𝓢𝓟</h1>
             </div>

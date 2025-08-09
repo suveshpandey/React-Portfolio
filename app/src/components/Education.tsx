@@ -28,7 +28,7 @@ const Education = () => {
                         className="w-full max-w-xl lg:w-3/4">
                         <h6 className="mb-2 font-semibold">Bachelor of Technology ( Information Technology )</h6>
                         <p className="text-neutral-400">Mahatma Gandhi Chitrakoot Gramoday Vishwavidyalaya, Chitrakoot (MP), India - 485334</p>
-                        <p className="pt-2">GPA - <span className="text-blue-200">8.1/10</span> <span className="text-neutral-400">(till 3rd sem)</span></p>
+                        <p className="pt-2">GPA - <span className="text-blue-200">8.2/10</span> <span className="text-neutral-400">(till 4th sem)</span></p>
                     </motion.div>
                 </div>
             </div>

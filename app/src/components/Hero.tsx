@@ -33,7 +33,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="pb-12 sm:text-6xl text-5xl font-thin tracking-tight lg:text-7xl">
-                            Suvesh Pandey
+                            Suvesh Pandey 
                         </motion.h1>
                         <motion.span 
                             className="line-1 anim-typewriter bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
@@ -44,7 +44,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="my-2 max-w-xl sm:text-left text-neutral-400 text-center pt-6 pb-2 font-light tracking-tight">
-                            I am a third-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, I am currently expanding my expertise by exploring advanced concepts like TypeScript and Nextjs. 
+                            I am a third-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, I am currently expanding my expertise by exploring advanced concepts like TypeScript, Nextjs and Monorepo. 
                         </motion.p>
                         <motion.p
                             variants={container(0.7)}
