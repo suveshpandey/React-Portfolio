@@ -12,7 +12,7 @@ import { FaCodeCompare } from "react-icons/fa6";
 
 const Technologies = () => {
   return (
-    <div className="min-h-screen text-white flex items-center justify-center overflow-hidden sm:pt-0 pt-20">
+    <div className="min-h-screen text-white flex items-center justify-center overflow-hidden sm:pt-0 pt-40">
       <div className="w-full mx-auto px-4 sm:px-0">
 
         <motion.div 

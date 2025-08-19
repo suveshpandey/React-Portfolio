@@ -11,7 +11,7 @@ const CodingProfiles = () => {
     }
 
     return (
-        <div className="h-screen flex flex-col justify-center items-center px-4 sm:px-0">
+        <div className="h-screen flex flex-col justify-center items-center px-4 sm:px-0 sm:pt-0 pt-40">
             <motion.div 
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}

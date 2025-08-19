@@ -42,7 +42,7 @@ import { Phone, Mail } from "lucide-react";
 
 const Contact = () => {
     return (
-        <div className="py-16 px-4 sm:px-0">
+        <div className="py-16 px-4 sm:px-0 sm:pt-0 pt-40">
         {/* Heading */}
         <motion.h2
             whileInView={{ opacity: 1, y: 0 }}

@@ -9,7 +9,7 @@ const Projects = () => {
     };
 
     return (
-        <section className="">
+        <section className="min-h-screen sm:pt-0 pt-40">
         
             <motion.div 
                 whileInView={{ opacity: 1, y: 0 }}
