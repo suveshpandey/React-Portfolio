@@ -37,7 +37,7 @@ const Technologies = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-green-500/30 hover:border-green-400/50 duration-200 cursor-pointer ">
+          className="flex flex-col py-4 px-4 rounded-xl border-1 border-green-500/30 hover:border-green-400/50 duration-200 cursor-pointer ">
           <h1 className="mb-4 text-center text-slate-300 font-medium">Programming Languages</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<FaC className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
@@ -52,7 +52,7 @@ const Technologies = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-purple-500/30 hover:border-purple-400/50 duration-300 cursor-pointer">
+          className="flex flex-col py-4 px-4 rounded-xl border-1 border-purple-500/30 hover:border-purple-400/50 duration-300 cursor-pointer">
           <h1 className="mb-4 text-center text-slate-300 font-medium">Frontend Skills</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<RiReactjsLine className="text-sky-500 sm:size-6 size-5" />} technologyName={"ReactJS"} />
@@ -68,7 +68,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-blue-500/30 hover:border-blue-400/50 duration-300 cursor-pointer">
+        className="flex flex-col py-4 px-4 rounded-xl border-1 border-blue-500/30 hover:border-blue-400/50 duration-300 cursor-pointer">
           <h1 className="mb-4 text-center text-slate-300 font-medium">Backend Skills</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<FaNodeJs className="text-green-500 sm:size-6 size-5" />} technologyName={"NodeJS"} />
@@ -84,7 +84,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-yellow-500/30 hover:border-yellow-400/50 duration-300 cursor-pointer">
+        className="flex flex-col py-4 px-4 rounded-xl border-1 border-yellow-500/30 hover:border-yellow-400/50 duration-300 cursor-pointer">
           <h1 className="mb-4 text-center text-slate-300 font-medium">Tools</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<FaGitAlt className="text-orange-500 sm:size-6 size-5" />} technologyName={"Git"} />
