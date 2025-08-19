@@ -24,15 +24,15 @@ const Hero = () => {
     }
 
     return (
-        <div className="border-b border-neutral-800 pb-20 lg:mb-35 sm:mt-20 mt-10">
-            <div className="flex flex-wrap justify-center items-center sm:mx-20" >
+        <div className="border-b border-neutral-800 pb-20 lg:mb-35 sm:mt-20 mt-40">
+            <div className="flex flex-wrap justify-center items-center" >
                 <div className="w-full sm:w-[48%]">
                     <div className="flex flex-col sm:items-start items-center justify-center ">
                         <motion.h1  
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-12 sm:text-6xl text-5xl font-thin tracking-tight lg:text-7xl">
+                            className="pb-12 sm:text-6xl text-5xl font-normal tracking-tight lg:text-7xl">
                             Suvesh Pandey 
                         </motion.h1>
                         <motion.span 
@@ -44,7 +44,7 @@ const Hero = () => {
                             initial="hidden"
                             animate="visible"
                             className="my-2 max-w-xl sm:text-left text-neutral-400 text-center pt-6 pb-2 font-light tracking-tight">
-                            I am a third-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, I am currently expanding my expertise by exploring advanced concepts like TypeScript, Nextjs and Monorepo. 
+                            I am a third-year IT engineering student passionate about web development and problem-solving. With a solid grasp of the MERN stack, Nextjs and Typescript. 
                         </motion.p>
                         <motion.p
                             variants={container(0.7)}

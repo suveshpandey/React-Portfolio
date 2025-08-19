@@ -1,98 +1,108 @@
 import { RiReactjsLine, RiNextjsLine, RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri"
-import { SiMongodb, SiExpress, } from "react-icons/si"
+import { SiMongodb, SiExpress, SiPostman, } from "react-icons/si"
 import { FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaDocker } from "react-icons/fa"
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi"
 import { TbBrandCpp} from "react-icons/tb"
 import { FaAws, FaC } from "react-icons/fa6";
 import { motion } from "framer-motion"
 import { TechnologyCard } from "./TechnologyCard"
+import { FaLinux } from "react-icons/fa";
+import { FaCodeCompare } from "react-icons/fa6";
 
 
 const Technologies = () => {
   return (
-    <div className="min-h-screen border-b border-neutral-800 text-white py-20 relative overflow-hidden">
+    <div className="min-h-screen text-white flex items-center justify-center overflow-hidden sm:pt-0 pt-20">
+      <div className="w-full mx-auto px-4 sm:px-0">
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
+        <motion.div 
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-20"
-        >
-          <h2 className="text-4xl font-light text-white mb-6">
-            Technologies
+          initial={{ opacity: 0, y: -50 }}
+          transition={{ duration: 1 }}
+          className="w-full flex flex-col gap-y-3 items-center mb-10">
+          <h2 className="text-4xl font-bold 
+              bg-gradient-to-r from-blue-500   to-green-500 
+              bg-clip-text text-transparent px-10">
+              Technologies & Tools
           </h2>
-          <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+          <div className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500"></div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             A comprehensive overview of my technical expertise across different domains
           </p>
-        </motion.div>
+      </motion.div>
 
-        <motion.div 
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 ">
+          <motion.div 
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex flex-col">
-          <h1 className="mb-2 text-center text-slate-300">Programming Languages</h1>
-          {/* <div className="w-1/2 h-[1px] bg-slate-500 opacity-50 mx-auto mt-2 mb-2"></div> */}
-          <div className="flex flex-wrap justify-center sm:gap-x-7 gap-x-2 gap-2">
-            <TechnologyCard technologyIcon={<FaC className="text-blue-500" size={35} />} technologyName={""} />
-            <TechnologyCard technologyIcon={<TbBrandCpp className="text-blue-500" size={35} />} technologyName={""} />
-            <TechnologyCard technologyIcon={<RiJavascriptFill className="text-yellow-500" size={35} />} technologyName={"JavaScript"} />
-            <TechnologyCard technologyIcon={<BiLogoTypescript className="text-blue-500" size={35} />} technologyName={"TypeScript"} />
-          </div>
-        </motion.div>
-        <motion.div 
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex flex-col mt-10">
-          <h1 className="mb-2 text-center text-slate-300">Frontend Skills</h1>
-          {/* <div className="w-1/2 h-[1px] bg-slate-500 opacity-50 mx-auto mt-2 mb-2"></div> */}
-          <div className="flex flex-wrap justify-center sm:gap-x-7 gap-x-2 gap-y-2">
-            <TechnologyCard technologyIcon={<RiReactjsLine className="text-sky-500" size={35} />} technologyName={"ReactJS"} />
-            <TechnologyCard technologyIcon={<RiNextjsLine className="text-white" size={35} />} technologyName={"NextJS"} />
-            <TechnologyCard technologyIcon={<RiTailwindCssFill className="text-purple-500" size={35} />} technologyName={"Tailwind"} />
-            <TechnologyCard technologyIcon={<FaHtml5 className="text-orange-500" size={35} />} technologyName={"HTML"} />
-            <TechnologyCard technologyIcon={<FaCss3Alt className="text-sky-500" size={35} />} technologyName={"CSS"} />
-          </div>
-        </motion.div>
-        <motion.div 
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="flex flex-col mt-10">
-          <h1 className="mb-2 text-center text-slate-300">Backend Skills</h1>
-          {/* <div className="w-1/2 h-[1px] bg-slate-500 opacity-50 mx-auto mt-2 mb-2"></div> */}
-          <div className="flex flex-wrap justify-center sm:gap-x-7 gap-x-2 gap-y-2">
-            <TechnologyCard technologyIcon={<FaNodeJs className="text-green-500" size={35} />} technologyName={"NodeJS"} />
-            <TechnologyCard technologyIcon={<SiExpress className="text-white" size={35} />} technologyName={"ExpressJS"} />
-            <TechnologyCard technologyIcon={<SiMongodb className="text-green-500" size={35} />} technologyName={"MongoDB"} />
-            <TechnologyCard technologyIcon={<BiLogoPostgresql className="text-sky-500" size={35} />} technologyName={"PostgreSQL"} />
-          </div>
-        </motion.div>
-        <motion.div 
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="flex flex-col mt-10">
-          <h1 className="mb-2 text-center text-slate-300">Other Skills</h1>
-          {/* <div className="w-1/2 h-[1px] bg-slate-500 opacity-50 mx-auto mt-2 mb-2"></div> */}
-          <div className="flex flex-wrap justify-center sm:gap-x-7 gap-x-2 gap-y-2">
-            <TechnologyCard technologyIcon={<FaGitAlt className="text-orange-500" size={35} />} technologyName={"Git"} />
-            <TechnologyCard technologyIcon={<FaGithub className="text-white" size={35} />} technologyName={"Github"} />
-            <TechnologyCard technologyIcon={<FaDocker className="text-sky-500" size={35} />} technologyName={"Docker"} />
-            <TechnologyCard technologyIcon={<FaAws className="text-orange-400" size={35} />} technologyName={"AWS"} />
+          className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-green-500/30 hover:border-green-400/50 duration-200 cursor-pointer ">
+          <h1 className="mb-4 text-center text-slate-300 font-medium">Programming Languages</h1>
+          <div className="flex flex-wrap gap-3">
+            <TechnologyCard technologyIcon={<FaC className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
+            <TechnologyCard technologyIcon={<TbBrandCpp className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
+            <TechnologyCard technologyIcon={<RiJavascriptFill className="text-yellow-500 sm:size-6 size-5" />} technologyName={"JavaScript"} />
+            <TechnologyCard technologyIcon={<BiLogoTypescript className="text-blue-500 sm:size-6 size-5" />} technologyName={"TypeScript"} />
           </div>
         </motion.div>
         
+        <motion.div 
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-purple-500/30 hover:border-purple-400/50 duration-300 cursor-pointer">
+          <h1 className="mb-4 text-center text-slate-300 font-medium">Frontend Skills</h1>
+          <div className="flex flex-wrap gap-3">
+            <TechnologyCard technologyIcon={<RiReactjsLine className="text-sky-500 sm:size-6 size-5" />} technologyName={"ReactJS"} />
+            <TechnologyCard technologyIcon={<RiNextjsLine className="text-white sm:size-6 size-5" />} technologyName={"NextJS"} />
+            <TechnologyCard technologyIcon={<RiTailwindCssFill className="text-purple-500 sm:size-6 size-5" />} technologyName={"Tailwind"} />
+            <TechnologyCard technologyIcon={<FaHtml5 className="text-orange-500 sm:size-6 size-5" />} technologyName={"HTML"} />
+            <TechnologyCard technologyIcon={<FaCss3Alt className="text-sky-500 sm:size-6 size-5" />} technologyName={"CSS"} />
+          </div>
+        </motion.div>
+        
+        <motion.div 
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-blue-500/30 hover:border-blue-400/50 duration-300 cursor-pointer">
+          <h1 className="mb-4 text-center text-slate-300 font-medium">Backend Skills</h1>
+          <div className="flex flex-wrap gap-3">
+            <TechnologyCard technologyIcon={<FaNodeJs className="text-green-500 sm:size-6 size-5" />} technologyName={"NodeJS"} />
+            <TechnologyCard technologyIcon={<SiExpress className="text-white sm:size-6 size-5" />} technologyName={"ExpressJS"} />
+            <TechnologyCard technologyIcon={<SiMongodb className="text-green-500 sm:size-6 size-5" />} technologyName={"MongoDB"} />
+            <TechnologyCard technologyIcon={<BiLogoPostgresql className="text-sky-500 sm:size-6 size-5" />} technologyName={"PostgreSQL"} />
+            <TechnologyCard technologyIcon={<FaCodeCompare className="text-sky-500 sm:size-6 size-5" />} technologyName={"Rest APIs"} />
+          </div>
+        </motion.div>
+        
+        <motion.div 
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="flex flex-col bg-slate-950 py-4 px-4 rounded-xl border-1 border-yellow-500/30 hover:border-yellow-400/50 duration-300 cursor-pointer">
+          <h1 className="mb-4 text-center text-slate-300 font-medium">Tools</h1>
+          <div className="flex flex-wrap gap-3">
+            <TechnologyCard technologyIcon={<FaGitAlt className="text-orange-500 sm:size-6 size-5" />} technologyName={"Git"} />
+            <TechnologyCard technologyIcon={<FaGithub className="text-white sm:size-6 size-5" />} technologyName={"Github"} />
+            <TechnologyCard technologyIcon={<FaDocker className="text-sky-500 sm:size-6 size-5" />} technologyName={"Docker"} />
+            <TechnologyCard technologyIcon={<FaAws className="text-orange-400 sm:size-6 size-5" />} technologyName={"AWS"} />
+            <TechnologyCard technologyIcon={<SiPostman className="text-orange-300 sm:size-6 size-5" />} technologyName={"Postman"} />
+            <TechnologyCard technologyIcon={<FaLinux className="text-white sm:size-6 size-5" />} technologyName={"Linux"} />
+          </div>
+        </motion.div>
+        </div>
+
       </div>
     </div>
   )
 }
 
 export default Technologies
+
+
+

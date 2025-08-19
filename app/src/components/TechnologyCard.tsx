@@ -1,13 +1,13 @@
 interface TechnologyCardProps {
-    technologyIcon: React.ReactNode,
-    technologyName: string
+    technologyIcon: React.ReactNode;
+    technologyName: string;
 }
 
-export const TechnologyCard = ({technologyIcon, technologyName}: TechnologyCardProps) => {
+export const TechnologyCard = ({ technologyIcon, technologyName }: TechnologyCardProps) => {
     return (
-        <div 
-            className="w-auto flex space-x-2 items-center rounded-2xl border-2 border-neutral-800 px-4 py-2">
-            {technologyIcon} <span className="text-slate-400">{technologyName}</span>
+        <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900/60 border border-slate-800 text-sm shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+            {technologyIcon}
+            <span className="text-slate-300">{technologyName}</span>
         </div>
-    )
-}
+    );
+};

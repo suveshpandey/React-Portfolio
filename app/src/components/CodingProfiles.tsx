@@ -11,14 +11,25 @@ const CodingProfiles = () => {
     }
 
     return (
-        <div className="border-b border-neutral-800 pb-20 lg:mb-20 ">
-            <motion.h1 
-                whileInView={{opacity: 1, y: 0}}
-                initial={{opacity: 0, y: -100}}
-                transition={{duration: 1.5}}
-                className="mb-20 text-center text-4xl">
-                Coding Profiles
-            </motion.h1>
+        <div className="h-screen flex flex-col justify-center items-center px-4 sm:px-0">
+            <motion.div 
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -50 }}
+                transition={{ duration: 1 }}
+                className="w-full flex flex-col gap-y-3 items-center mb-10">
+                <h2 className="text-4xl font-bold 
+                    bg-gradient-to-r from-blue-500   to-green-500 
+                    bg-clip-text text-transparent px-10">
+                    Coding Profiles
+                </h2>
+                <div className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500"></div>
+                <p className="text-gray-400 text-lg max-w-2xl mx-auto text-center">
+                    Profiles that reflect my dedication to algorithms, logic, and coding practice.
+                </p>
+            </motion.div>
+
+            
+
             <motion.div
                 whileInView={{opacity: 1, x: 0}}
                 initial={{opacity: 0, x: 100}}
@@ -62,3 +73,4 @@ const CodingProfiles = () => {
 }
 
 export default CodingProfiles
+
