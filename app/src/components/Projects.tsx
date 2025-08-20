@@ -1,5 +1,4 @@
 import { PROJECTS } from "../lib";
-import { FiLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 
