@@ -1,6 +1,8 @@
 import { PROJECTS } from "../lib";
 import { FiLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa6";
+import { GoDotFill } from "react-icons/go";
+
 import { motion } from "motion/react";
 
 const Projects = () => {
@@ -17,8 +19,8 @@ const Projects = () => {
                 transition={{ duration: 1 }}
                 className="w-full flex flex-col gap-y-3 items-center mb-10">
                 <h2 className="text-4xl font-bold 
-                    bg-gradient-to-r from-blue-500   to-green-500 
-                    bg-clip-text text-transparent px-10">
+                    bg-gradient-to-r from-blue-500 to-green-500 
+                    bg-clip-text text-transparent text-center">
                     Projects
                 </h2>
                 <div className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500"></div>
@@ -31,7 +33,7 @@ const Projects = () => {
                 </motion.p>
             </motion.div>
 
-            <div className="space-y-10 px-4 sm:px-0">
+            <div className="space-y-6 px-4 sm:px-0">
                 {PROJECTS.map((project, index) => (
                 <motion.div
                     key={index}
@@ -72,27 +74,30 @@ const Projects = () => {
 
                         {/* Buttons */}
                         <div className="flex flex-wrap gap-3">
-                        <button
-                            type="button"
-                            onClick={() => handleBtnClick(project.live || "")}
-                            className="inline-flex items-center px-5 py-2.5 rounded-lg 
-                                    bg-indigo-600 hover:bg-indigo-700 text-white 
-                                    font-medium transition duration-300 cursor-pointer"
-                        >
-                            <FiLink className="mr-2" size={16} />
-                            Live
-                        </button>
+                            <button
+                                type="button"
+                                onClick={() => handleBtnClick(project.live || "")}
+                                className="inline-flex items-center px-5 py-2.5 rounded-lg 
+                                bg-gradient-to-tr from-indigo-800 via-blue-700 to-sky-600 
+                                hover:from-indigo-700 hover:via-blue-600 hover:to-sky-500 
+                                text-white font-medium transition duration-300 cursor-pointer"
+>
+                                {/* <FiLink className="mr-2" size={16} /> */}
+                                <GoDotFill className="mr-2 animate-ping" size={16} />
+                                
+                                Live
+                            </button>
 
-                        <button
-                            type="button"
-                            onClick={() => handleBtnClick(project.github || "")}
-                            className="inline-flex items-center px-5 py-2.5 rounded-lg 
-                                    bg-neutral-800 hover:bg-neutral-700 text-white 
-                                    font-medium transition duration-300 cursor-pointer"
-                        >
-                            <FaGithub className="mr-2" size={16} />
-                            GitHub
-                        </button>
+                            <button
+                                type="button"
+                                onClick={() => handleBtnClick(project.github || "")}
+                                className="inline-flex items-center px-5 py-2.5 rounded-lg 
+                                        bg-gradient-to-tr from-gray-900 via-slate-800 to-gray-700 hover:to-gray-500 text-white 
+                                        font-medium transition duration-300 cursor-pointer"
+                            >
+                                <FaGithub className="mr-2" size={16} />
+                                GitHub
+                            </button>
                         </div>
                     </div>
                     </div>

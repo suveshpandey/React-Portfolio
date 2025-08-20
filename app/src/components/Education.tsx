@@ -39,8 +39,8 @@ const Education = () => {
                 transition={{ duration: 1 }}
                 className="w-full flex flex-col gap-y-3 items-center mb-10">
                 <h2 className="text-4xl font-bold 
-                    bg-gradient-to-r from-blue-500   to-green-500 
-                    bg-clip-text text-transparent px-10">
+                    bg-gradient-to-r from-blue-500 to-green-500 
+                    bg-clip-text text-transparent text-center">
                     About Me
                 </h2>
                 <div className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500"></div>
