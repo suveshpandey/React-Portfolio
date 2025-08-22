@@ -22,7 +22,12 @@ const CodingProfiles = () => {
                     bg-clip-text text-transparent text-center">
                     Coding Profiles
                 </h2>
-                <div className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500"></div>
+                <motion.div
+                    whileInView={{ scaleX: 1 }}
+                    initial={{ scaleX: 0 }}
+                    transition={{ duration: 1 }}
+                    className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500">
+                </motion.div>
                 <p className="text-gray-400 text-lg max-w-2xl mx-auto text-center">
                     Profiles that reflect my dedication to algorithms, logic, and coding practice.
                 </p>
@@ -31,9 +36,9 @@ const CodingProfiles = () => {
             
 
             <motion.div
-                whileInView={{opacity: 1, x: 0}}
-                initial={{opacity: 0, x: 100}}
-                transition={{duration: 1.5}}
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 40 }}
+                transition={{ duration: 1 }}
                 className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3">
                 <button
                     type="button"

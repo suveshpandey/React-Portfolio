@@ -22,7 +22,14 @@ const Projects = () => {
                     bg-clip-text text-transparent text-center">
                     Projects
                 </h2>
-                <div className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500"></div>
+
+                <motion.div 
+                    whileInView={{ scaleX: 1 }}
+                    initial={{ scaleX: 0 }}
+                    transition={{ duration: 1 }}
+                    className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500">    
+                </motion.div>
+                
                 <motion.p 
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 40 }}
@@ -36,9 +43,9 @@ const Projects = () => {
                 {PROJECTS.map((project, index) => (
                 <motion.div
                     key={index}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: 80 }}
-                    transition={{ duration: 1, delay: 0.1 * index }}
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    transition={{ duration: 3 }}
                     className="relative group rounded-2xl bg-neutral-900/40 border border-neutral-800 
                             backdrop-blur-sm shadow-lg p-6 lg:p-10 hover:border-indigo-500/50 
                             transition duration-500"

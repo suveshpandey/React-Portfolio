@@ -5,64 +5,64 @@ import { Phone, Mail } from "lucide-react";
 const Contact = () => {
     return (
         <div className="py-16 px-4 sm:px-0 sm:pt-0 pt-40">
-        {/* Heading */}
-        <motion.h2
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -50 }}
-            transition={{ duration: 1 }}
-            className="text-4xl font-bold text-center 
-            bg-gradient-to-r from-blue-500   to-green-500 
-            bg-clip-text text-transparent mb-4"
-        >
-            Get In Touch
-        </motion.h2>
-
-        {/* Divider line */}
-        <motion.div
-            whileInView={{ scaleX: 1 }}
-            initial={{ scaleX: 0 }}
-            transition={{ duration: 1 }}
-            className="w-60 h-1 mx-auto rounded-full 
-            bg-gradient-to-r from-green-400 via-slate-500 to-blue-500 mb-8"
-        />
-
-        {/* Contact Cards */}
-        <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ duration: 1 }}
-            className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto"
-        >
-            {/* Phone */}
-            <div className="flex items-center gap-4 p-6 rounded-2xl 
-            bg-slate-800/40 border border-slate-700/50 hover:border-slate-500/50 
-            shadow-md hover:shadow-lg transition-all duration-300 cursor-default"
+            {/* Heading */}
+            <motion.h2
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -50 }}
+                transition={{ duration: 1 }}
+                className="text-4xl font-bold text-center 
+                bg-gradient-to-r from-blue-500   to-green-500 
+                bg-clip-text text-transparent mb-4"
             >
-            <Phone className="text-sky-400 w-6 h-6" />
-            <p className="text-gray-300 text-lg">
-                <span className="mr-2 text-gray-400">+91</span>{CONTACT.phoneNo}
+                Get In Touch
+            </motion.h2>
+
+            {/* Divider line */}
+            <motion.div
+                whileInView={{ scaleX: 1 }}
+                initial={{ scaleX: 0 }}
+                transition={{ duration: 1 }}
+                className="w-60 h-1 mx-auto rounded-full 
+                bg-gradient-to-r from-green-400 via-slate-500 to-blue-500 mb-8">
+            </motion.div>
+
+            {/* Contact Cards */}
+            <motion.div
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 40 }}
+                transition={{ duration: 1 }}
+                className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto"
+            >
+                {/* Phone */}
+                <div className="flex items-center gap-4 p-6 rounded-2xl 
+                bg-slate-800/40 border border-slate-700/50 hover:border-slate-500/50 
+                shadow-md hover:shadow-lg transition-all duration-300 cursor-default"
+                >
+                <Phone className="text-sky-400 w-6 h-6" />
+                <p className="text-gray-300 text-lg">
+                    <span className="mr-2 text-gray-400">+91</span>{CONTACT.phoneNo}
+                </p>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center gap-4 p-6 rounded-2xl 
+                bg-slate-800/40 border border-slate-700/50 hover:border-slate-500/50 
+                shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
+                >
+                <Mail className="text-green-400 w-6 h-6" />
+                <a
+                    href={`mailto:${CONTACT.email}`}
+                    className="text-lg text-gray-300 hover:text-green-400 transition-colors"
+                >
+                    {CONTACT.email}
+                </a>
+                </div>
+            </motion.div>
+
+            {/* Footer */}
+            <p className="text-center mt-10 text-gray-500 text-sm">
+                © 2025 | Suvesh Pandey
             </p>
-            </div>
-
-            {/* Email */}
-            <div className="flex items-center gap-4 p-6 rounded-2xl 
-            bg-slate-800/40 border border-slate-700/50 hover:border-slate-500/50 
-            shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
-            >
-            <Mail className="text-green-400 w-6 h-6" />
-            <a
-                href={`mailto:${CONTACT.email}`}
-                className="text-lg text-gray-300 hover:text-green-400 transition-colors"
-            >
-                {CONTACT.email}
-            </a>
-            </div>
-        </motion.div>
-
-        {/* Footer */}
-        <p className="text-center mt-10 text-gray-500 text-sm">
-            © 2025 | Suvesh Pandey
-        </p>
         </div>
     );
 };

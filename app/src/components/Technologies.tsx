@@ -25,7 +25,14 @@ const Technologies = () => {
               bg-clip-text text-transparent text-center">
               Technologies & Tools
           </h2>
-          <div className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500"></div>
+
+          <motion.div 
+            whileInView={{ scaleX: 1 }}
+            initial={{ scaleX: 0 }}
+            transition={{ duration: 1 }}
+            className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500">
+          </motion.div>
+          
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             A comprehensive overview of my technical expertise across different domains
           </p>
@@ -33,25 +40,23 @@ const Technologies = () => {
 
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 ">
           <motion.div 
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex flex-col py-4 px-4 rounded-xl border-1 border-green-500/30 hover:border-green-400/50 duration-200 cursor-pointer ">
-          <h1 className="mb-4 text-center text-slate-300 font-medium">Programming Languages</h1>
-          <div className="flex flex-wrap gap-3">
-            <TechnologyCard technologyIcon={<FaC className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
-            <TechnologyCard technologyIcon={<TbBrandCpp className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
-            <TechnologyCard technologyIcon={<RiJavascriptFill className="text-yellow-500 sm:size-6 size-5" />} technologyName={"JavaScript"} />
-            <TechnologyCard technologyIcon={<BiLogoTypescript className="text-blue-500 sm:size-6 size-5" />} technologyName={"TypeScript"} />
-          </div>
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{ duration: 3 }}
+            className="flex flex-col py-4 px-4 rounded-xl border-1 border-green-500/30 hover:border-green-400/50 duration-200 cursor-pointer ">
+            <h1 className="mb-4 text-center text-slate-300 font-medium">Programming Languages</h1>
+            <div className="flex flex-wrap gap-3">
+              <TechnologyCard technologyIcon={<FaC className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
+              <TechnologyCard technologyIcon={<TbBrandCpp className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
+              <TechnologyCard technologyIcon={<RiJavascriptFill className="text-yellow-500 sm:size-6 size-5" />} technologyName={"JavaScript"} />
+              <TechnologyCard technologyIcon={<BiLogoTypescript className="text-blue-500 sm:size-6 size-5" />} technologyName={"TypeScript"} />
+            </div>
         </motion.div>
         
         <motion.div 
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0}}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 3 }}
           className="flex flex-col py-4 px-4 rounded-xl border-1 border-purple-500/30 hover:border-purple-400/50 duration-300 cursor-pointer">
           <h1 className="mb-4 text-center text-slate-300 font-medium">Frontend Skills</h1>
           <div className="flex flex-wrap gap-3">
@@ -64,11 +69,10 @@ const Technologies = () => {
         </motion.div>
         
         <motion.div 
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="flex flex-col py-4 px-4 rounded-xl border-1 border-blue-500/30 hover:border-blue-400/50 duration-300 cursor-pointer">
+        initial={{ opacity: 0}}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 3 }}
+          className="flex flex-col py-4 px-4 rounded-xl border-1 border-blue-500/30 hover:border-blue-400/50 duration-300 cursor-pointer">
           <h1 className="mb-4 text-center text-slate-300 font-medium">Backend Skills</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<FaNodeJs className="text-green-500 sm:size-6 size-5" />} technologyName={"NodeJS"} />
@@ -80,11 +84,10 @@ const Technologies = () => {
         </motion.div>
         
         <motion.div 
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="flex flex-col py-4 px-4 rounded-xl border-1 border-yellow-500/30 hover:border-yellow-400/50 duration-300 cursor-pointer">
+        initial={{ opacity: 0}}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 3 }}
+          className="flex flex-col py-4 px-4 rounded-xl border-1 border-yellow-500/30 hover:border-yellow-400/50 duration-300 cursor-pointer">
           <h1 className="mb-4 text-center text-slate-300 font-medium">Tools</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<FaGitAlt className="text-orange-500 sm:size-6 size-5" />} technologyName={"Git"} />
