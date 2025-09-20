@@ -38,13 +38,13 @@ const Technologies = () => {
           </p>
       </motion.div>
 
-        <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 ">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-3">
           <motion.div 
             initial={{ opacity: 0}}
             whileInView={{ opacity: 1}}
             transition={{ duration: 3 }}
-            className="flex flex-col py-4 px-4 rounded-xl border-1 border-green-500/30 hover:border-green-400/50 duration-200 cursor-pointer ">
-            <h1 className="mb-4 text-center text-slate-300 font-medium">Programming Languages</h1>
+            className="flex flex-col py-4 px-4 rounded-xl border-1 bg-neutral-900/40 border-green-500/30 hover:border-green-400/50 duration-200 cursor-pointer ">
+            <h1 className="mb-4 text-center text-slate-300 font-bold">Programming Languages</h1>
             <div className="flex flex-wrap gap-3">
               <TechnologyCard technologyIcon={<FaC className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
               <TechnologyCard technologyIcon={<TbBrandCpp className="text-blue-500 sm:size-6 size-5" />} technologyName={""} />
@@ -57,8 +57,8 @@ const Technologies = () => {
           initial={{ opacity: 0}}
           whileInView={{ opacity: 1}}
           transition={{ duration: 3 }}
-          className="flex flex-col py-4 px-4 rounded-xl border-1 border-purple-500/30 hover:border-purple-400/50 duration-300 cursor-pointer">
-          <h1 className="mb-4 text-center text-slate-300 font-medium">Frontend Skills</h1>
+          className="flex flex-col py-4 px-4 rounded-xl bg-neutral-900/40 border-1 border-purple-500/30 hover:border-purple-400/50 duration-300 cursor-pointer">
+          <h1 className="mb-4 text-center text-slate-300 font-bold">Frontend</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<RiReactjsLine className="text-sky-500 sm:size-6 size-5" />} technologyName={"ReactJS"} />
             <TechnologyCard technologyIcon={<RiNextjsLine className="text-white sm:size-6 size-5" />} technologyName={"NextJS"} />
@@ -72,8 +72,8 @@ const Technologies = () => {
         initial={{ opacity: 0}}
           whileInView={{ opacity: 1}}
           transition={{ duration: 3 }}
-          className="flex flex-col py-4 px-4 rounded-xl border-1 border-blue-500/30 hover:border-blue-400/50 duration-300 cursor-pointer">
-          <h1 className="mb-4 text-center text-slate-300 font-medium">Backend Skills</h1>
+          className="flex flex-col py-4 px-4 rounded-xl bg-neutral-900/40 border-1 border-blue-500/30 hover:border-blue-400/50 duration-300 cursor-pointer">
+          <h1 className="mb-4 text-center text-slate-300 font-bold">Backend</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<FaNodeJs className="text-green-500 sm:size-6 size-5" />} technologyName={"NodeJS"} />
             <TechnologyCard technologyIcon={<SiExpress className="text-white sm:size-6 size-5" />} technologyName={"ExpressJS"} />
@@ -87,8 +87,8 @@ const Technologies = () => {
         initial={{ opacity: 0}}
           whileInView={{ opacity: 1}}
           transition={{ duration: 3 }}
-          className="flex flex-col py-4 px-4 rounded-xl border-1 border-yellow-500/30 hover:border-yellow-400/50 duration-300 cursor-pointer">
-          <h1 className="mb-4 text-center text-slate-300 font-medium">Tools</h1>
+          className="flex flex-col py-4 px-4 rounded-xl bg-neutral-900/40 border-1 border-yellow-500/30 hover:border-yellow-400/50 duration-300 cursor-pointer">
+          <h1 className="mb-4 text-center text-slate-300 font-bold">Tools</h1>
           <div className="flex flex-wrap gap-3">
             <TechnologyCard technologyIcon={<FaGitAlt className="text-orange-500 sm:size-6 size-5" />} technologyName={"Git"} />
             <TechnologyCard technologyIcon={<FaGithub className="text-white sm:size-6 size-5" />} technologyName={"Github"} />

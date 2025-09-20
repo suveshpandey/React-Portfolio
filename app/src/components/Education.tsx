@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { GraduationCap, Award, Briefcase } from "lucide-react"
+import { GraduationCap, Award, Briefcase, Cloud } from "lucide-react"
 
 const Education = () => {
     const cards = [
@@ -26,6 +26,14 @@ const Education = () => {
             place: "Seeking Internship Opportunities",
             detail: "Next.js • TypeScript • Scalable Web Apps • Problem Solving",
             color: "border-indigo-500/30 hover:border-indigo-400/50",
+        },
+        {
+            icon: <Cloud className="text-orange-400 w-6 h-6" />,
+            title: "Cloud & DevOps",
+            subtitle: "Expanding Technical Stack",
+            place: "Currently Learning",
+            detail: "AWS • Docker • Kubernetes • CI/CD Pipelines • Infrastructure as Code",
+            color: "border-orange-500/30 hover:border-orange-400/50",
         },
     ]
 

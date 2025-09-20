@@ -1,81 +1,97 @@
-import leetcode from  "../assets/socialImgs/leetcode-icon.png"
-import codeforces from  "../assets/socialImgs/codeforces-icon.png"
-import codechef from  "../assets/socialImgs/codechef-icon.png"
-import gfg from  "../assets/socialImgs/gfg-icon.png"
-
-import { motion } from "motion/react"
+import { FaGithub } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+import GitHubCalendar from "react-github-calendar";
+import { motion } from "motion/react";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 const CodingProfiles = () => {
-    const handleBtnClick = (url: string) => {
-        window.open(url, "_blank");
-    }
-
     return (
-        <div className="h-screen flex flex-col justify-center items-center px-4 sm:px-0 sm:pt-0 pt-40">
-            <motion.div 
+        <div className="min-h-screen w-full flex flex-col items-center px-4 pt-32 pb-20 ">
+            <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
                 transition={{ duration: 1 }}
-                className="w-full flex flex-col gap-y-3 items-center mb-10">
-                <h2 className="text-4xl font-bold 
-                    bg-gradient-to-r from-blue-500 to-green-500 
-                    bg-clip-text text-transparent text-center">
-                    Coding Profiles
+                className="w-full max-w-6xl flex flex-col gap-y-4 items-center mb-16"
+            >
+                <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent text-center">
+                    Coding Activity
                 </h2>
                 <motion.div
                     whileInView={{ scaleX: 1 }}
                     initial={{ scaleX: 0 }}
-                    transition={{ duration: 1 }}
-                    className="w-60 mx-auto h-1 rounded-full bg-gradient-to-r from-green-500 via-slate-500 to-blue-500">
-                </motion.div>
-                <p className="text-gray-400 text-lg max-w-2xl mx-auto text-center">
-                    Profiles that reflect my dedication to algorithms, logic, and coding practice.
+                    transition={{ duration: 1, delay: 0.2 }}
+                    className="w-72 h-1 rounded-full bg-gradient-to-r from-emerald-400 via-blue-400 to-emerald-400"
+                />
+                <p className="text-gray-300 text-lg max-w-2xl mx-auto text-center mt-4 leading-relaxed">
+                    My coding profiles and activity heatmaps showcase my dedication to consistent practice and growth as a developer.
                 </p>
             </motion.div>
-
-            
 
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 40 }}
                 transition={{ duration: 1 }}
-                className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3">
-                <button
-                    type="button"
-                    onClick={() => handleBtnClick("https://leetcode.com/u/Suvesh_Pandey/") }
-                    className="text-white border-2 shadow-gray-800 shadow-md hover:shadow-lg border-gray-700 hover:bg-gray-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3 transition-all duration-200"
-                >
-                    <img src={leetcode} alt="leetcode" className="size-10" />
-                    <span className="text-neutral-300">Leetcode</span>
-                </button>
-                <button
-                    type="button"
-                    onClick={() => handleBtnClick("https://codeforces.com/profile/suvesh_pandey") }
-                    className="text-white border-2 shadow-gray-800 shadow-md hover:shadow-lg border-gray-700 hover:bg-gray-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3 transition-all duration-200"
-                >
-                    <img src={codeforces} alt="leetcode" className="size-10" />
-                    <span className="text-neutral-300">Codeforces</span>
-                </button>
-                <button
-                    type="button"
-                    onClick={() => handleBtnClick("https://www.codechef.com/users/suvesh_pandey") }
-                    className="text-white border-2 shadow-gray-800 shadow-md hover:shadow-lg border-gray-700 hover:bg-gray-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3 transition-all duration-200"
-                >
-                    <img src={codechef} alt="leetcode" className="size-10" />
-                    <span className="text-neutral-300">Codechef</span>
-                </button>
-                <button
-                    type="button"
-                    onClick={() => handleBtnClick("https://www.geeksforgeeks.org/user/suveshpandey/") }
-                    className="text-white border-2 shadow-gray-800 shadow-md hover:shadow-lg border-gray-700 hover:bg-gray-800 cursor-pointer font-medium rounded-lg w-[200px] py-2.5 flex items-center justify-center me-2 mb-2 gap-x-3 transition-all duration-200"
-                >
-                    <img src={gfg} alt="leetcode" className="size-10" />
-                    <span className="text-neutral-300">GeeksForGeeks</span>
-                </button>
+                className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8"
+            >
+                {/* GitHub Card */}
+                <div className="bg-neutral-800/40 p-6 rounded-2xl flex flex-col gap-6 border border-green-800/50 hover:border-green-600/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10">
+                    <a 
+                        href="https://github.com/suveshpandey" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-fit flex items-center text-xl font-semibold gap-3 py-1 text-gray-200 hover:text-emerald-300 transition-colors group"
+                    >
+                        <div className="p-2 rounded-lg bg-neutral-700 group-hover:bg-emerald-400/10 transition-colors">
+                            <FaGithub size={24} className="text-white" />
+                        </div>
+                        <span>GitHub Profile</span>
+                        <SquareArrowOutUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </a>
+                    <div className="w-full overflow-x-auto flex justify-center bg-neutral-900/50">
+                        <GitHubCalendar 
+                            username="suveshpandey" 
+                            
+                            fontSize={14}
+                            hideColorLegend
+                            hideMonthLabels
+                        />
+                    </div>
+                </div>
+
+                {/* LeetCode Card */}
+                <div className="bg-neutral-800/40 p-6 rounded-2xl flex flex-col gap-6 border border-yellow-800/50 hover:border-yellow-600/50   backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/10">
+                    <a 
+                        href="https://leetcode.com/Suvesh_Pandey/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-fit flex items-center text-xl font-semibold gap-3 py-1 text-gray-200 hover:text-amber-300 transition-colors group"
+                    >
+                        <div className="p-2 rounded-lg bg-neutral-700 group-hover:bg-amber-400/10 transition-colors">
+                            <SiLeetcode size={24} className="text-amber-400" />
+                        </div>
+                        <span>LeetCode Profile</span>
+                        <SquareArrowOutUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </a>
+                    <div className="w-full overflow-x-auto flex justify-center rounded-lg bg-neutral-900/50">
+                        <img
+                            src="https://leetcard.jacoblin.cool/Suvesh_Pandey?ext=heatmap"
+                            alt="LeetCode Stats"
+                            className="w-full rounded-md transition-transform duration-300"
+                        />
+                    </div>
+                </div>
             </motion.div>
+            
+            <motion.p 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.2 }}
+                className="text-neutral-500 text-sm mt-12 text-center max-w-2xl"
+            >
+                Consistent coding practice is key to mastering development skills. These activity graphs represent my journey and commitment to continuous learning.
+            </motion.p>
         </div>
-    )
-}
+    );
+};
 
-export default CodingProfiles
-
+export default CodingProfiles;

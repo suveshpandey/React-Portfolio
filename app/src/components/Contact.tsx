@@ -4,7 +4,7 @@ import { Phone, Mail } from "lucide-react";
 
 const Contact = () => {
     return (
-        <div className="py-16 px-4 sm:px-0 sm:pt-0 pt-40">
+        <div className="h-150 py-16 flex flex-col items-center justify-center px-4 sm:px-0">
             {/* Heading */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
